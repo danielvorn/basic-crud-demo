@@ -36,10 +36,6 @@ function StudentDrawerForm({showDrawer, setShowDrawer, fetchStudents}) {
         alert(JSON.stringify(errorInfo, null, 2));
     };
 
-    const showSpinner = () => {
-        setSubmitting(true)
-    }
-
     const renderForm = () => {
         if (submitting) {
             return <div className="example"><Spin/></div>
