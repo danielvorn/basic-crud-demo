@@ -1,15 +1,8 @@
 import './App.css';
 import {useEffect, useState} from "react";
 import {deleteStudent, getAllStudents} from "./client";
-import {Avatar, Badge, Breadcrumb, Button, Layout, Menu, Spin, Table, Tag, Radio, Popconfirm, Empty} from 'antd';
-import {
-    DesktopOutlined,
-    FileOutlined,
-    PieChartOutlined,
-    PlusOutlined,
-    TeamOutlined,
-    UserOutlined
-} from '@ant-design/icons';
+import {Avatar, Badge, Breadcrumb, Button, Empty, Layout, Menu, Popconfirm, Radio, Spin, Table, Tag} from 'antd';
+import {FileOutlined, PieChartOutlined, PlusOutlined, TeamOutlined, UserOutlined} from '@ant-design/icons';
 import StudentDrawerForm from "./StudentDrawerForm";
 import {errorNotification, successNotification} from "./Notification";
 
