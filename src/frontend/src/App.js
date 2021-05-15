@@ -2,12 +2,11 @@ import './App.css';
 import {useEffect, useState} from "react";
 import {deleteStudent, getAllStudents} from "./client";
 import {Avatar, Badge, Breadcrumb, Button, Empty, Layout, Menu, Popconfirm, Radio, Spin, Table, Tag} from 'antd';
-import {FileOutlined, PieChartOutlined, PlusOutlined, TeamOutlined, UserOutlined} from '@ant-design/icons';
+import {FileOutlined, PieChartOutlined, PlusOutlined, UserOutlined} from '@ant-design/icons';
 import StudentDrawerForm from "./StudentDrawerForm";
 import {errorNotification, successNotification} from "./Notification";
 
 const {Header, Content, Footer, Sider} = Layout;
-const {SubMenu} = Menu;
 
 const MyAvatar = ({name}) => {
     let trim = name.trim()
