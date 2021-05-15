@@ -162,10 +162,6 @@ function App() {
                 <Menu.Item key="1" icon={<PieChartOutlined/>}>
                     Option 1
                 </Menu.Item>
-                <SubMenu key="sub2" icon={<TeamOutlined/>} title="Team">
-                    <Menu.Item key="6">Team 1</Menu.Item>
-                    <Menu.Item key="8">Team 2</Menu.Item>
-                </SubMenu>
                 <Menu.Item key="9" icon={<FileOutlined/>}>
                     Files
                 </Menu.Item>
