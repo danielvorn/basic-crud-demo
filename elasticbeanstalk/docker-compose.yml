@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   backend:
-    image: "phillysamurai/spring-react-fullstack:latest"
+    image: "phillysamurai/spring-react-fullstack:15.5.2021.23.30.57"
     ports:
       - "80:8080"
     restart: "always"
