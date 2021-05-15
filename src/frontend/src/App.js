@@ -2,12 +2,11 @@ import './App.css';
 import {useEffect, useState} from "react";
 import {deleteStudent, getAllStudents} from "./client";
 import {Avatar, Badge, Breadcrumb, Button, Empty, Layout, Menu, Popconfirm, Radio, Spin, Table, Tag} from 'antd';
-import {FileOutlined, PieChartOutlined, PlusOutlined, TeamOutlined, UserOutlined} from '@ant-design/icons';
+import {FileOutlined, PieChartOutlined, PlusOutlined, UserOutlined} from '@ant-design/icons';
 import StudentDrawerForm from "./StudentDrawerForm";
 import {errorNotification, successNotification} from "./Notification";
 
 const {Header, Content, Footer, Sider} = Layout;
-const {SubMenu} = Menu;
 
 const MyAvatar = ({name}) => {
     let trim = name.trim()
@@ -162,10 +161,6 @@ function App() {
                 <Menu.Item key="1" icon={<PieChartOutlined/>}>
                     Option 1
                 </Menu.Item>
-                <SubMenu key="sub2" icon={<TeamOutlined/>} title="Team">
-                    <Menu.Item key="6">Team 1</Menu.Item>
-                    <Menu.Item key="8">Team 2</Menu.Item>
-                </SubMenu>
                 <Menu.Item key="9" icon={<FileOutlined/>}>
                     Files
                 </Menu.Item>
