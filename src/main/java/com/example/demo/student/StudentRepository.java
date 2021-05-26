@@ -14,5 +14,5 @@ public interface StudentRepository
             "FROM Student s " +
             "WHERE s.email = ?1"
     )
-    Boolean selectExistsEmail(String email);
+    Boolean emailExists(String email);
 }

@@ -24,7 +24,7 @@ public class StudentController {
     @PostMapping
     public void addStudent(@Valid @RequestBody Student student) {
         Boolean existsEmail = studentRepository
-                .selectExistsEmail(student.getEmail());
+                .emailExists(student.getEmail());
         if (existsEmail) {
             throw new BadRequestException("Email " + student.getEmail() + " taken");
         }
